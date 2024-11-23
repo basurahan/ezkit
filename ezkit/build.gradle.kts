@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.navigation.fragment)
 }
 
 afterEvaluate {
@@ -51,7 +52,7 @@ afterEvaluate {
 
                 groupId = "com.github.basurahan"
                 artifactId = "ezkit"
-                version = "1.0.4"
+                version = "1.0.5"
             }
         }
     }
