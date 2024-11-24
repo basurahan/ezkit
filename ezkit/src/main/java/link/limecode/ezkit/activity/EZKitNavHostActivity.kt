@@ -1,6 +1,7 @@
 package link.limecode.ezkit.activity
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.annotation.CallSuper
 import androidx.annotation.NavigationRes
 import androidx.navigation.NavController
@@ -13,6 +14,10 @@ abstract class EZKitNavHostActivity :
 
     abstract val param: Param
     protected lateinit var hostNavController: NavController
+
+    override fun bind(inflater: LayoutInflater): ActivityNavHostBinding {
+        return ActivityNavHostBinding.inflate(inflater)
+    }
 
     @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {

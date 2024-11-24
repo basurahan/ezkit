@@ -52,7 +52,7 @@ afterEvaluate {
 
                 groupId = "com.github.basurahan"
                 artifactId = "ezkit"
-                version = "1.0.5"
+                version = "1.0.6"
             }
         }
     }

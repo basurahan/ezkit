@@ -13,7 +13,7 @@ abstract class EZKitFragmentBinding<T : ViewBinding> : Fragment() {
     private var _viewBinding: T? = null
 
     protected val viewBinding: T
-        get() = _viewBinding ?: throw IllegalStateException("view binding not ready")
+        get() = _viewBinding ?: error("view binding not ready")
 
     @CallSuper
     override fun onCreateView(
